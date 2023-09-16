@@ -1,0 +1,12 @@
+<app-header title="HABILIDADES" slot="start"></app-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let item of componente"[routerLink]="item.redirecTo" detail="true">
+    <ion-card-content>
+      <ion-card-title>{{item.name}}</ion-card-title>
+      <ion-card-subtitle>{{item.subtitle}}</ion-card-subtitle>
+      <ion-card-content>{{item.content}}</ion-card-content>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
